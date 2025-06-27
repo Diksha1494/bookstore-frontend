@@ -1,0 +1,26 @@
+.recommended-section {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recommended-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.recommended-swiper {
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; /* Arrow color */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}

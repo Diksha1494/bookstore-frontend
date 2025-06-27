@@ -75,14 +75,14 @@ const News = () => {
                         {/* content */}
                         <div className="news-content">
                             <Link to="/" style={{ textDecoration: "none" }}>
-                                 <h3 className='text-lg font-medium hover:text-blue-500 mb-4' style={{ textDecoration: "none" }}>{item.title}</h3>
+                                 <h3 style={{ textDecoration: "none" }}>{item.title}</h3>
                             </Link>
                             <div className="news-underline" style={{ textDecoration: "none" }}></div>
                             <p className="news-description">{item.description}</p>
                         </div>
 
                         <div className="news-image">
-                            <img src={item.image} alt=""  className='w-full object-cover'/>
+                            <img src={item.image} alt="" />
                         </div>
                     </div>
                 </SwiperSlide>

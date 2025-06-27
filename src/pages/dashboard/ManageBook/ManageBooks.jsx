@@ -8,7 +8,7 @@ const ManageBooks = () => {
   const navigate = useNavigate();
   const { data, refetch } = useFetchAllBooksQuery();
   const [deleteBook] = useDeleteBookMutation();
-  const books = data?.books || [];s
+  const books = data?.books || [];
   const handleDeleteBook = async (id) => {
     try {
       await deleteBook(id).unwrap();
