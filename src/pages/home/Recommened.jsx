@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import BookCard from '../books/BookCard';
 import { useFetchAllBooksQuery } from '../../redux/features/books/booksApi';
-import './recommened.css'; // Link to your normal CSS file
+import './Recommened.css'; // Link to your normal CSS file
 
 const Recommened = () => {
   const { data } = useFetchAllBooksQuery();
