@@ -14,13 +14,14 @@
   font-size: 2rem; /* text-3xl = ~2rem */
   font-weight: 600;
   margin-bottom: 1.75rem;
-  color: #222;
+  color:var(--text-color);
 }
 
 .top-sellers-filter {
   margin-bottom: 2.5rem;
   display: flex;
   align-items: center;
+    
 }
 
 .top-sellers-select {
@@ -35,15 +36,27 @@
 .mySwiper {
   width: 100%;
   padding-bottom: 3rem;
+    z-index: 1;
+  background-color:  var(--bg-color);
 }
 
 /* Swiper navigation arrows */
 .swiper-button-prev,
 .swiper-button-next {
-  color: #0D0842;
+    border-radius: 50%;
+   background-color: #f1f1f1;
+   font-size: 1.5rem;
+   
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
+  
+}
+
+
+.slider-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

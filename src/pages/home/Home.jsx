@@ -12,6 +12,7 @@ import Footer from '../../components/Footer';
     <TopSellers/>
     <Recommened/>
     <News/>
+    {/* <Footer/> */}
     
    </>
   )

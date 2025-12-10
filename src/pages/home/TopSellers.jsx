@@ -46,7 +46,7 @@ const books = data?.books || [];
           ))}
         </select>
       </div>
-
+          <div className="slider-wrapper">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -79,6 +79,7 @@ const books = data?.books || [];
             </SwiperSlide>
           ))}
       </Swiper>
+      </div>
     </div>
   );
 };

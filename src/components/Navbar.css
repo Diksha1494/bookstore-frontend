@@ -11,7 +11,10 @@
   justify-content: space-between;
   align-items: center;
 }
-
+/* darkmode */
+.navbar {
+  background-color: var(--card-bg);
+}
 .navbar-left {
   display: flex;
   align-items: center;
@@ -23,6 +26,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  height: 100%;
 }
 
 /* Icon */
@@ -37,29 +41,64 @@
   display: flex;
   align-items: center;
   border: 1px solid #111010;
-  padding: 4px 8px;
+  padding: 4px 12px;
   border-radius: 6px;
-  background-color:#aea9a9;
+  background-color:#f4f1f1;
+  width: 350px;
+  height: 45px;
 }
 
 .search-icon {
   margin-right: 4px;
   font-size: 18px;
-  color: #171717;
+  color: var(--text-color);
+
 }
 
 .search-input {
-  color: #111010;
+  /* color: #111010; */
+  color: var(--text-color);
+
   border: none;
   outline: none;
-  font-size: 14px;
-  background-color: #aea9a9;
+  font-size: 16px;
+  background-color: #fef9f9;
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
   
 }
+.search-input:focus {
+  outline: none;
+  border: 1px solid #2563eb;
+  box-shadow: 0 0 6px #2563eb;
+}
+
+.recommend-link {
+   font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: #f3f3f3;
+  transition: background-color 0.3s ease;
+}
+
+.recommend-link:hover {
+  background-color: #e0e0e0;
+}
+
 
 /* Avatar */
 .avatar-button {
   background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
   border: none;
   outline: none;
   cursor: pointer;
@@ -69,6 +108,9 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
+ object-fit: cover;
+ display: block;
+ margin-top: 4px;
 }
 
 .avatar-active {
@@ -141,4 +183,5 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  color:  var(--text-color);
 }

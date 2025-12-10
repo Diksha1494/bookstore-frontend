@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import './Book.css'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../redux/features/cart/cartSlice'
+import { motion } from 'framer-motion';
+
 
 const BookCard = ({ book }) => {
   const dispatch = useDispatch();
@@ -16,14 +18,20 @@ const BookCard = ({ book }) => {
   if (!book) return null; // safeguard
 
   return (
-    <div className="book-card">
+ 
+    <motion.div
+  className="book-card"
+  whileHover={{ scale: 1.05 }}
+  transition={{ duration: 0.3 }}
+>
       <div className="book-card-content">
+      
         <div className="book-image-wrapper">
           <Link to={`/books/${book?._id}`}>
             <img
               src={`${getImgUrl(book?.coverImage)}`}
               alt=""
-              className="w-full bg-cover p-2 rounded-md cursor-pointer hover:scale-105 transition-all duration-200"
+              className="book-image"
             />
           </Link>
         </div>
@@ -46,7 +54,8 @@ const BookCard = ({ book }) => {
           </button>
         </div>
       </div>
-    </div>
+    
+    </motion.div>
   );
 };
 

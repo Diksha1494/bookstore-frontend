@@ -7,12 +7,15 @@ import avatarImg from "../assets/avatar.png";
 import './Navbar.css';
 import { useSelector } from 'react-redux';
 import { useAuth } from "../context/AuthContext";
+import DarkModeToggle from '../components/DarkModeToggle';
+
 
 const navigation = [
   { name: "Dashboard", href: "/dashboard" },
   { name: "Orders", href: "/orders" },
   { name: "CartPage", href: "/cart" },
   { name: "Check Out", href: "/checkout" },
+
 ];
 
 const Navbar = () => {
@@ -36,14 +39,19 @@ const Navbar = () => {
             <IoSearchOutline className="search-icon" />
             <input className="search-input" type="text" placeholder="Search here" />
           </div>
+         
         </div>
 
         {/* Right */}
         <div className="navbar-right">
+        <DarkModeToggle/>
           <div className="user-avatar">
             {
               currentUser ? (
                 <>
+
+
+
                   <button
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                     className="avatar-button"
@@ -76,6 +84,10 @@ const Navbar = () => {
           <button className="icon-button">
             <HiOutlineHeart className="icon" />
           </button>
+           {/* 🔹 Recommendation AI link after search bar */}
+<Link to="/recommend" className="recommend-link">
+  BooksyAI
+</Link>
 
           <Link to="/cart" className="cart-button">
             <HiOutlineShoppingCart className="cart-icon" />

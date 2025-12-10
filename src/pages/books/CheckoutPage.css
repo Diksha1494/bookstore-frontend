@@ -1,5 +1,6 @@
 .checkout-section {
-  background-color: #f3f4f6;
+  /* background-color: #f3f4f6; */
+   background-color: var(--card-bg);
   padding: 40px 0;
   display: flex;
   justify-content: center;
