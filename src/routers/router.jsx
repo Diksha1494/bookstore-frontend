@@ -14,7 +14,7 @@ import DashboardLayout from "../pages/dashboard/DashboardLayout";
 import Dashboard from "../pages/dashboard/Dashboard";
 import AddBook from "../pages/dashboard/addbook/AddBook";
 import UpdateBook from "../pages/dashboard/EditBook/UpdateBook";
-import UserDashboard from "../pages/dashboard/users/UserDashboard";
+import UserDashboard from "../pages/dashboard/users/UserDashBoard";
 import ManageBooks from "../pages/dashboard/ManageBook/ManageBooks";
 import Recommendations from "../components/Recommendations";
 
